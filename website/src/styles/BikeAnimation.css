@@ -1,0 +1,16 @@
+@keyframes moveBike {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(calc(100vw + 100px)); /* Adjust 100px based on your bike width */
+    }
+  }
+  
+  .bike {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: moveBike 5s linear forwards; /* Adjust duration as needed */
+  }
