@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #FF5F0F,  #13294b);
+  background: linear-gradient(to bottom, #E56E15,  #4D69A0);
   color: #fff;
 }
 
@@ -12,11 +12,16 @@ body {
 }
 
 header {
-  background-color: transparent;
-  padding: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-right: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 100px;
+  margin-top: 30px;
 }
 
 nav {
@@ -25,24 +30,28 @@ nav {
 }
 
 .logo {
+  width: 300px;  /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
   margin-right: 20px;
+  padding-left: 10px;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
   display: flex;
+  align-items: center; /* Align items in the center vertically */
 }
 
 li {
   margin: 0 15px;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
 
 li:hover {
-  color: #e8e9ea;
+  color: #808080;
 }
 
 section {
@@ -56,17 +65,44 @@ section {
 h1,
 h2 {
   color: #ffffff;
+  font-size: 48px;
 }
 
 p {
   color: #ffffff;
   line-height: 1.6;
+  font-size: 22px;
 }
 
 footer {
-  background-color: #13294b;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 /* Add more styles as needed */
+
+.team-member-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.team-member-card h3 {
+  font-size: 32px; /* Adjust the font size as needed */
+  color: #000000;
+}
+
+.team-member-card p {
+  font-size: 28px; /* Adjust the font size as needed */
+  color: #000000;
+}
+
+.team-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

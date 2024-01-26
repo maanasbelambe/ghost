@@ -2,7 +2,9 @@ import React from 'react';
 import './styles/App.css';
 import './styles/BikeAnimation.css'; // Add this line
 import TeamCarousel from './components/TeamCarousel';
+import GhostHeader from './Ghost_Logo_v2.png';
 import movingBike from './movingBike2.png';
+import TeamMemberCard from './components/TeamMemberCard';
 
 const App = () => {
   const scrollToSection = (sectionId) => {
@@ -13,16 +15,15 @@ const App = () => {
   return (
     <div className="app">
       <header>
-        <h1>GHOST Electric</h1>
+        <img className="logo" src={GhostHeader} alt="GhostHeader" />
         <nav>
           <ul>
-            <li onClick={() => scrollToSection('mission')}>Mission/Purpose</li>
-            <li onClick={() => scrollToSection('joining')}>Interested in Joining?</li>
+            <li onClick={() => scrollToSection('mission')}>Mission</li>
+            <li onClick={() => scrollToSection('joining')}>Join</li>
             <li onClick={() => scrollToSection('team')}>The Team</li>
-            <li onClick={() => scrollToSection('exec')}>Executive Bios</li>
             <li onClick={() => scrollToSection('bike')}>The Bike</li>
             <li onClick={() => scrollToSection('plans')}>Future Plans</li>
-            <li onClick={() => scrollToSection('race')}>The Race/AHRMA</li>
+            <li onClick={() => scrollToSection('race')}>The Race</li>
           </ul>
         </nav>
       </header>
@@ -34,34 +35,57 @@ const App = () => {
       </section>
       <section id="joining">
         <h2>Interested in Joining?</h2>
-        <p>Contact us if you are interested in joining our team!</p>
+        <p>Fill out this form: <a href="http://tinyurl.com/3ft4826h" target="_blank">http://tinyurl.com/3ft4826h</a></p>
       </section>
       <section id="team">
         <h2>The Team</h2>
-        <p>Introduce your team members and their roles here.</p>
-        <TeamCarousel />
-      </section>
-      <section id="exec">
-        <h2>Executive Bios</h2>
-        <p>Provide brief biographies of your executive team members.</p>
+        <div className="team-cards-container">
+          {/* Use TeamMemberCard component for each team member */}
+          <TeamMemberCard
+            name="Paul Klapperich"
+            role="President"
+            bio="Email"
+          />
+          <TeamMemberCard
+            name="Sam Nutlis"
+            role="Vice President"
+            bio="Email"
+          />
+          <TeamMemberCard
+            name="Harith Palani"
+            role="Treasurer"
+            bio="Email"
+          />
+          <TeamMemberCard
+            name="Sam Blaker"
+            role="Secretary"
+            bio="Email"
+          />
+          <TeamMemberCard
+            name="Evelina Astranskas"
+            role="Membership Director"
+            bio="Email"
+          />
+          {/* Add more TeamMemberCard components for other team members */}
+        </div>
       </section>
       <section id="bike">
         <h2>The Bike</h2>
-        <p>Describe the electric motorcycle and its features.</p>
+        <p>Coming Vroom.</p>
       </section>
       <section id="plans">
         <h2>Future Plans</h2>
-        <p>Outline your organization's future plans and goals.</p>
+        <p>Text for future plans and goals.</p>
       </section>
       <section id="race">
         <h2>The Race - AHRMA</h2>
-        <p>The AHRMA Formula Lightning series is the premier zero-emissions motorcycle road racing series in the US. Bikes may be powered by any means of propulsion that does not emit exhaust, such as electricity, magnetism, gravity, flywheels, springs, etc.</p>
+        <p>The AHRMA Formula Lightning series is the premier zero-emissions motorcycle road racing series in the US. Bikes may be powered by any means of propulsion that does not emit exhaust, such as electricity, magnetism, gravity, flywheels, springs, etc. See more at: <a href="https://ahrma.org/" target="_blank">https://ahrma.org/.</a></p>
       </section>
       <footer>
         <p>&copy; 2024 GHOST Electric. All rights reserved.</p>
       </footer>
-      {/* Add the bike element */}
-      <img className="bike" src={movingBike} alt="Moving Bike" />
+      {/* Add the bike element 
+      <img className="bike" src={movingBike} alt="Moving Bike" />*/}
     </div>
   );
 };
