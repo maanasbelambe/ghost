@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #E56E15,  #4D69A0);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ffdfcd,  #d0d4db);
   color: #fff;
 }
 
@@ -18,11 +18,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
   border-radius: 100px;
   margin-top: 30px;
+  margin-bottom: 50px;
+  height: 60px;
 }
+
 
 nav {
   display: flex;
@@ -33,7 +36,7 @@ nav {
   width: 300px;  /* Adjust the width as needed */
   height: auto; /* Maintain the aspect ratio */
   margin-right: 20px;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 ul {
@@ -54,6 +57,115 @@ li:hover {
   color: #808080;
 }
 
+.join-button {
+  background-color: #42546f; /* Adjust the background color as needed */
+  color: #ffffff; /* Adjust the text color as needed */
+  padding: 8px 20px; /* Add padding as needed */
+  border-radius: 5px; /* Add border radius as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.join-button:hover {
+  background-color: #E56E15; /* Adjust the hover background color as needed */
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  ul {
+    display: none; /* Hide the list items on mobile */
+  }
+
+  .logo {
+    margin-right: 0; /* Remove the right margin for the logo on mobile */
+  }
+}
+
+.landing-image {
+  position: relative;
+  height: 650px;
+  width: 100%;
+  background-image: url('../Ghost_Logo_BikeWide.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideFromLeft 0.5s ease-in-out; /* Add animation for sliding from the left */
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fadeIn 2s ease-in-out 0s forwards; /* Add animation for fading in */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.text-overlay h1 {
+  font-size: 58px;
+}
+
+.text-overlay p {
+  font-size: 28px; /* Set the desired font size for p */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .landing-image {
+    margin-top: -100px;
+    margin-bottom: -100px;
+  }
+
+  .text-overlay {
+    width: 80%; /* Adjust the width as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    white-space: normal;
+    margin-top: -100px;
+  }
+
+  .text-overlay h1 {
+    font-size: 28px; /* Adjust the font size for h1 on mobile */
+  }
+
+  .text-overlay p {
+    font-size: 18px; /* Adjust the font size for p on mobile */
+  }
+}
+
+.highlight {
+  color: #FF5F05; /* Set the color for "University of Illinois" */
+}
+
+/* Optionally, you can add a different color for "Urbana-Champaign" */
+.highlight::after {
+  content: " Urbana-Champaign";
+  color:  #13294B; /* Set the color for "Urbana-Champaign" */
+}
+
 section {
   padding: 50px 20px;
   margin: 20px 0;
@@ -62,17 +174,29 @@ section {
   background-color: #ffffff00;
 }
 
+#mission p {
+  max-width: 1100px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the text within the container */
+}
+
+#race p {
+  max-width: 1100px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the text within the container */
+}
+
 h1,
 h2 {
-  color: #ffffff;
+  color: #000000;
   font-size: 48px;
 }
 
 p {
-  color: #ffffff;
+  color: #000000;
   line-height: 1.6;
   font-size: 22px;
 }
+
+
 
 footer {
   color: #fff;
@@ -88,7 +212,7 @@ footer {
   padding: 20px;
   margin: 10px;
   text-align: center;
-  width: 300px;
+  width: 320px;
 }
 
 .team-member-card h3 {
@@ -98,6 +222,11 @@ footer {
 
 .team-member-card p {
   font-size: 28px; /* Adjust the font size as needed */
+  color: #000000;
+}
+
+.team-member-card a {
+  font-size: 24px;
   color: #000000;
 }
 
