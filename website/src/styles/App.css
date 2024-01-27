@@ -108,9 +108,10 @@ li:hover {
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   opacity: 0; /* Initially set opacity to 0 */
   animation: fadeIn 2s ease-in-out 0s forwards; /* Add animation for fading in */
+  width: 80vh;
 }
 
 @keyframes fadeIn {
@@ -207,12 +208,13 @@ footer {
 
 .team-member-card {
   background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 2px solid #42546f;
+  border-radius: 5px;
   padding: 20px;
   margin: 10px;
   text-align: center;
   width: 320px;
+  padding-bottom: 70px;
 }
 
 .team-member-card h3 {
@@ -223,6 +225,7 @@ footer {
 .team-member-card p {
   font-size: 28px; /* Adjust the font size as needed */
   color: #000000;
+  padding: 0px 10px;  
 }
 
 .team-member-card a {
@@ -234,4 +237,45 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.subteams-table {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.subteams-table tr {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.subteams-table td {
+  background-color: #ffffffa9;
+  border: 1px solid #000000;
+  border-radius: 60px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  padding-bottom: 50px;
+  width: 320px;
+}
+
+
+.subteams-table h3 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.subteams-table h2 {
+  font-size: 38px;
+  color: #000000;
+  margin-top: 100px;
+}
+
+.subteams-table p {
+  margin: 0;
+  font-size: 22px;
 }

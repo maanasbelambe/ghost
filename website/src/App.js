@@ -3,6 +3,7 @@ import './styles/App.css';
 import './styles/BikeAnimation.css';
 //import TeamCarousel from './components/TeamCarousel';
 import GhostHeader from './Ghost_Logo_v2.png';
+// import GhostHeaderNoDash from './Ghost_Logo_v2_mobile.png';
 import { SocialIcon } from 'react-social-icons';
 //import movingBike from './movingBikeTemp.png';
 import TeamMemberCard from './components/TeamMemberCard';
@@ -20,12 +21,12 @@ const App = () => {
         <nav>
           <ul>
             <li onClick={() => scrollToSection('mission')}>Mission</li>
-            <li onClick={() => scrollToSection('team')}>The Team</li>
-            <li onClick={() => scrollToSection('bike')}>The Bike</li>
+            <li onClick={() => scrollToSection('team')}>Team</li>
+            <li onClick={() => scrollToSection('bike')}>Bike</li>
             {/*<li onClick={() => scrollToSection('plans')}>Future Plans</li>*/}
-            <li onClick={() => scrollToSection('race')}>The Race</li>
+            <li onClick={() => scrollToSection('race')}>Race</li>
             <li onClick={() => scrollToSection('contact')}>Contact</li>
-            <li onClick={() => window.open("http://tinyurl.com/3ft4826h", "_blank")} className="join-button">Join Us</li>
+            <li onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdfDWrpqsBBB54QqfaVNxusNceC7x9g6HOLcLC1u3IH_37UWw/viewform", "_blank")} className="join-button">Join</li>
           </ul>
         </nav>
       </header>
@@ -55,38 +56,59 @@ const App = () => {
             firstName="Paul"
             lastName="Klapperich"
             role="President"
-            bio="Major: Mechanical Engineering"
+            bio="Mechanical Engineering"
             email="paulek2@illinois.edu"
           />
           <TeamMemberCard
             firstName="Sam"
             lastName="Nutlis"
             role="Vice President"
-            bio="Major: Aerospace Engineering"
+            bio="Aerospace Engineering"
             email="snutlis2@illinois.edu"
           />
           <TeamMemberCard
             firstName="Harith"
             lastName="Palani"
             role="Treasurer"
-            bio="Major: Systems Engineering & Design"
+            bio="Systems Engineering & Design"
             email="hpala3@illinois.edu"
           />
           <TeamMemberCard
             firstName="Sam"
             lastName="Blaker"
             role="Secretary"
-            bio="Major: Finance in Agribusiness"
+            bio="Finance in Agribusiness"
             email="sblaker2@illinois.edu"
           />
           <TeamMemberCard
             firstName="Evelina"
             lastName="Astranskas"
             role="Membership Director"
-            bio="Major: Finance + Data Science"
+            bio="Finance + Data Science"
             email="evelina2@illinois.edu"
           />
           {/* Add more TeamMemberCard components for other team members */}
+        </div>
+        <div className="subteams-table">
+          <h2>Subteams</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Mechanical</h3>
+                  <p>Frame <br></br> Suspension <br></br> Drivetrain <br></br> Aerodynamics <br></br> Ergonomics <br></br> CAD</p>
+                </td>
+                <td>
+                  <h3>Electrical</h3>
+                  <p>Batteries <br></br> Motors <br></br> Controllers <br></br> Wiring <br></br> System <br></br> Integration</p>
+                </td>
+                <td>
+                  <h3>Logistical</h3>
+                  <p>Sponsorships <br></br> Bookkeeping <br></br> Recruiting <br></br> Social Media <br></br> Merch <br></br> Finance</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
       <section id="bike">
@@ -98,7 +120,7 @@ const App = () => {
         <p>Text for future plans and goals.</p>
       </section>*/}
       <section id="race">
-        <h2>The Race - AHRMA</h2>
+        <h2>The Race</h2>
         <p>The AHRMA Formula Lightning series is the premier zero-emissions motorcycle road racing series in the US. Bikes may be powered by any means of propulsion that does not emit exhaust, such as electricity, magnetism, gravity, flywheels, springs, etc. Learn more at <a href="https://ahrma.org/" target="_blank" rel="noopener noreferrer">ahrma.org.</a></p>
       </section>
       <section id="contact">
