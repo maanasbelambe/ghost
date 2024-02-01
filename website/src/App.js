@@ -2,10 +2,10 @@ import React from 'react';
 import './styles/App.css';
 import './styles/BikeAnimation.css';
 //import TeamCarousel from './components/TeamCarousel';
-import GhostHeader from './Ghost_Logo_v2.png';
-// import GhostHeaderNoDash from './Ghost_Logo_v2_mobile.png';
+import GhostHeader from './assets/Ghost_Logo_v2.png';
+// import GhostHeaderNoDash from './assets/Ghost_Logo_v2_mobile.png';
 import { SocialIcon } from 'react-social-icons';
-//import movingBike from './movingBikeTemp.png';
+//import movingBike from './assets/movingBikeTemp.png';
 import TeamMemberCard from './components/TeamMemberCard';
 
 const App = () => {
@@ -138,8 +138,6 @@ const App = () => {
           <SocialIcon url="https://discord.gg/56yq68vJKX" bgColor='#ff9f69' fgColor='#717f93'/>
         </p>
       </footer>
-      {/* Add the bike element 
-      <img className="bike" src={movingBike} alt="Moving Bike" />*/}
     </div>
   );
 };
