@@ -6,7 +6,13 @@ body {
 }
 
 .app {
-  text-align: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -200,11 +206,15 @@ p {
 
 
 footer {
-  color: #fff;
+  background-color: #10294b;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
-/* Add more styles as needed */
+
+.ill-wordmark {
+  margin-top: 15px;
+}
 
 .team-member-card {
   background-color: #ffffff;
@@ -218,7 +228,7 @@ footer {
 }
 
 .team-member-card h3 {
-  font-size: 32px; /* Adjust the font size as needed */
+  font-size: 32px;
   color: #000000;
 }
 
