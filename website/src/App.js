@@ -7,7 +7,7 @@ import GhostHeader from './assets/Ghost_Logo_v2.png';
 import { SocialIcon } from 'react-social-icons';
 //import movingBike from './assets/movingBikeTemp.png';
 import TeamMemberCard from './components/TeamMemberCard';
-import IllinoisWordmark from './illinois-wordmark.png'
+import IllinoisWordmark from './assets/illinois-wordmark.png'
 
 const App = () => {
   const scrollToSection = (sectionId) => {
