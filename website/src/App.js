@@ -94,7 +94,7 @@ const App = () => {
               bio="Finance + Data Science"
               email="evelina2@illinois.edu"
             />
-            {/* Add more TeamMemberCard components for other team members */}
+            {/* Add more TeamMemberCard components for other team members */} 
           </div>
           <div className="subteams-table">
             <h2>Subteams</h2>

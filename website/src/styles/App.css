@@ -203,26 +203,6 @@ p {
   font-size: 22px;
 }
 
-
-
-footer {
-  background-color: #10294b;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-}
-
-footer img {
-  width:100vw;
-  height:auto;
-  max-width: 473px;
-  max-height: 136px;
-}
-
-.ill-wordmark {
-  margin-top: 15px;
-}
-
 .team-member-card {
   background-color: #ffffff;
   border: 2px solid #42546f;
@@ -240,7 +220,7 @@ footer img {
 }
 
 .team-member-card p {
-  font-size: 28px; /* Adjust the font size as needed */
+  font-size: 28px; 
   color: #000000;
   padding: 0px 10px;  
 }
@@ -279,6 +259,25 @@ footer img {
   width: 320px;
 }
 
+.team-member-card {
+  background-color: #ffffff;
+  border: 2px solid #42546f;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 320px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+  .subteams-table td {
+    width: 100%;
+  }
+  .team-member-card {
+    width: 100%;
+  }
+}
 
 .subteams-table h3 {
   font-size: 28px;
@@ -295,4 +294,27 @@ footer img {
 .subteams-table p {
   margin: 0;
   font-size: 22px;
+}
+
+footer {
+  background-color: #10294b;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer img {
+  width:100vw;
+  height:auto;
+  max-width: 400px;
+}
+
+.ill-wordmark {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  footer img {
+    max-width: 100%;
+  }
 }
