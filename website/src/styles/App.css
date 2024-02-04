@@ -213,7 +213,7 @@ footer {
 }
 
 footer img {
-  width:100%;
+  width:100vw;
   height:auto;
   max-width: 473px;
   max-height: 136px;
