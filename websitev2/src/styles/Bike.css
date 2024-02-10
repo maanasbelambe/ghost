@@ -1,0 +1,29 @@
+.bike {
+    background: #ffffff;
+    height: 100vh;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #f05a27; /* Start color (orange) */
+    }
+    15% {
+        color: #f05a27
+    }
+    50% {
+        color: #000000;
+    }
+    85% {
+        color: #f05a27;
+    }
+    100% {
+        color: #f05a27;
+    }
+}
+
+.bike h1 {
+    text-align: center;
+    font-size: 100px;
+    padding: 225px;
+    animation: colorChange 3s linear infinite;
+}

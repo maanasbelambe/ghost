@@ -1,0 +1,129 @@
+.home {
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  height: 100vh; /* Adjust the height as needed */
+  background-color: #ffffff; /* Optional background color */
+}
+
+.landing {
+    position: relative;
+    width: 40%;
+    height: 100vh;
+    background-size: contain; /* Adjust the background size */
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: 200px;
+  }
+
+  .landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .landing h1 {
+    position: absolute;
+    top: 50%; /* Adjust the vertical position of h1 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500%;
+    font-size: 4rem;
+    color: #f05a27; /* Text color */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .landing p {
+    position: absolute;
+    top: 65%; /* Adjust the vertical position of p */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f05a27; /* Text color */
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between; /* Space items evenly along the main axis */
+    max-width: 100%; /* Set maximum width */
+    margin: 0 auto; /* Center the boxes horizontally */
+    background-color: #18181B;
+    height: 600px;
+  }
+  
+  .mission-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 20px; /* Add padding for spacing */
+    max-width: 30%; /* Adjust the width */
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto; /* Auto-center horizontally */
+    margin-right: auto; /* Auto-center horizontally */
+  }
+  
+  .mission-text h2 {
+    font-size: 4rem; /* Adjust the font size of h2 */
+  }
+  
+  .mission-text p {
+    font-size: 1.5rem; /* Adjust the font size of p */
+  }
+  
+  .mission-image {
+    flex: 1; /* Take up remaining space */
+    max-width: 45%; /* Limit width */
+  }
+  
+  .mission-image img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .race-content {
+    display: flex;
+    justify-content: space-between; /* Space items evenly along the main axis */
+    max-width: 100%; /* Set maximum width */
+    margin: 0 auto; /* Center the boxes horizontally */
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+  }
+  
+  .race-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 20px; /* Add padding for spacing */
+    max-width: 30%; /* Adjust the width */
+    color: #000000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto; /* Auto-center horizontally */
+    margin-right: auto; /* Auto-center horizontally */
+  }
+  
+  .race-text h2 {
+    font-size: 4rem; /* Adjust the font size of h2 */
+  }
+  
+  .race-text p {
+    font-size: 1.5rem; /* Adjust the font size of p */
+  }
+  
+  .race-image {
+    flex: 1; /* Take up remaining space */
+    max-width: 50%; /* Limit width */
+  }
+  
+  .race-image img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+  }
