@@ -1,11 +1,13 @@
 .contact {
     padding-top: 40px;
-    height: 100vh;
     padding-bottom: 100px;
+    background-color: #161616;
+    margin-bottom: -80px;
 }
 
 .contact h1 {
     font-size: 80px;
+    color: #f05a27;
 }
 
 .contact h3 {
@@ -13,13 +15,14 @@
     text-align: left;
     font-size: 20px;
     font-weight: normal;
+    color: #fff;
 }
 
 .contact-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 200px;
+    padding: 0 50px;
 }
 
 .contact-section {
@@ -34,7 +37,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
 }
 
 .contact-section h2 {
@@ -42,6 +45,7 @@
     font-size: 28px;
     color: #f05a27;
     height: 60px;
+    text-align: center;
 }
 
 .contact-section p {
@@ -64,4 +68,74 @@
 
 .contact-section button:hover {
     background-color: #10294b;
+}
+
+@media screen and (max-width: 767px) {
+.contact {
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background-color: #161616;
+    margin-bottom: -80px;
+}
+
+.contact h1 {
+    font-size: 40px;
+    color: #f05a27;
+    text-align: center;
+}
+
+.contact h3 {
+    padding: 0 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    margin-bottom: -20px;
+    font-size: 20px;
+    color: #f05a27;
+}
+
+.contact-section p {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-section button {
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #f05a27;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #10294b;
+}
+
 }

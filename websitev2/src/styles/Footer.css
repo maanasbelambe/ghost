@@ -1,16 +1,22 @@
 footer {
-    background-color: #10294b;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
+  background-color: #10294b;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
 }
-  
+
 footer img {
-    width:100vw;
-    height:auto;
-    max-width: 400px;
+  width:100vw;
+  height:auto;
+  max-width: 400px;
 }
-  
+
 .ill-wordmark {
-    margin-top: 15px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  footer img {
+    max-width: 100%;
+  }
 }
