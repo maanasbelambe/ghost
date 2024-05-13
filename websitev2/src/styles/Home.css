@@ -1,10 +1,25 @@
 .home {
+  position: relative;
   display: flex;
   justify-content: center; /* Horizontally center content */
   align-items: center; /* Vertically center content */
-  height: 100vh; /* Adjust the height as needed */
-  background-color: #161616; /* Optional background color */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  color: white; /* Set text color to white */
 }
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/frame.png'); /* Set the background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  filter: brightness(60%); /* Apply a 50% brightness filter to darken the background */
+}
+
 
 .landing {
     position: relative;
@@ -27,7 +42,7 @@
   
   .landing h1 {
     position: absolute;
-    top: 50%; /* Adjust the vertical position of h1 */
+    top: 30%; /* Adjust the vertical position of h1 */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -38,7 +53,7 @@
   
   .landing p {
     position: absolute;
-    top: 65%; /* Adjust the vertical position of p */
+    top: 45%; /* Adjust the vertical position of p */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -160,9 +175,14 @@
   
   .companies img {
     align-items: center;
-    padding: 50px; /* Add padding around the image */
-    max-width: 100%;
+    padding: 25px; /* Add padding around the image */
+    max-width: 40%;
     height: auto;
+  }
+
+  .companies .redbull img {
+    max-height: 30vh;
+    width: auto;
   }
   
   @media screen and (max-width: 767px) {
@@ -230,7 +250,7 @@
       display: inline-block;
       text-align: center; /* Center the content */
       max-width: 100%; /* Limit the width to prevent extending too far */
-      padding: 60px 0px;
+      padding: 30px 0px;
       box-sizing: border-box; /* Include padding in the width calculation */
     }
   }

@@ -1,9 +1,4 @@
-.background {
-    background-color: #161616;
-}
-
 .bike {
-    background: #161616;
     height: 100vh; /* Adjusted height for better responsiveness */
     display: flex; /* Added for centering content */
     justify-content: center; /* Added for centering content */

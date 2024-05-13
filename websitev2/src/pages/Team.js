@@ -5,7 +5,7 @@ import Paul from '../assets/PaulHeadshot2.jpg'
 import SamN from '../assets/SamHeadShot.jpg'
 import Harith from '../assets/HarithPic.png'
 import Evelina from '../assets/ElizaPic.JPG'
-import SamB from '../assets/ProHeadshot.jpg'
+import SamB from '../assets/SamBlaker.png'
 
 
 function Team() {
