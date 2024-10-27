@@ -38,7 +38,7 @@ function Home() {
         <div className="mission-content">
           <div className="mission-text">
             <h2>Mission</h2>
-            <p>GHOST Electric is a registered student organization (RSO) at The University of Illinois Urbana-Champaign, whose purpose is to design, construct, and race electric motorcycles while fitting within certain criteria given by the AHRMA Formula Lightning race organizers.</p>
+            <p>GHOST Electric is a registered student organization (RSO) at The University of Illinois Urbana-Champaign, whose purpose is to design, construct, and race electric motorcycles while fitting within certain criteria given by the MotoStudent race organizers.</p>
           </div>
           <div className="mission-image">
             <img src={mission} alt="Mission Image"/>
@@ -52,7 +52,7 @@ function Home() {
           </div>
           <div className="race-text">
             <h2>The Race</h2>
-            <p>The <a href="https://www.ahrma.org/" target="_blank">AHRMA</a> Formula Lightning series is the premier zero-emissions motorcycle road racing series in the US. Bikes may be powered by any means of propulsion that does not emit exhaust, such as electricity, magnetism, gravity, flywheels, springs, etc.</p>
+            <p>Ghost is participating in <a href="https://www.motostudent.com/" target="_blank">MotoStudent's</a> electric category, where teams from universities worldwide race their custom-built electric motorcycles, applying engineering skills in a competitive setting.</p>
           </div>
         </div>
       </div> 
