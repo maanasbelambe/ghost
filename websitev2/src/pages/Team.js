@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../styles/Team.css';
-import TeamPic2 from '../assets/TeamPic2.jpg'
+import TeamPic from '../assets/TeamPicQuad.jpg'
 import Paul from '../assets/PaulHeadshot2.jpg'
 import SamN from '../assets/SamHeadShot.jpg'
 import Harith from '../assets/HarithPic.png'
@@ -51,7 +51,7 @@ function Team() {
   return (
     <div className="team">
       <div className="top-section">
-        <img src={TeamPic2} alt="Team" />
+        <img src={TeamPic} alt="Team" />
         <h1>The Team</h1>
       </div>
       <div className="team-members">

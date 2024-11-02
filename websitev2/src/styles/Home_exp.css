@@ -1,0 +1,266 @@
+.home {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  color: white; /* Set text color to white */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/BikeWebPic3.jpg'); /* Set the background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  filter: brightness(60%); /* Apply a 50% brightness filter to darken the background */
+}
+
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: contain; /* Adjust the background size */
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: 200px;
+  }
+
+  .landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .landing h1 {
+    position: absolute;
+    top: 30%; /* Adjust the vertical position of h1 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 4rem;
+    color: #f05a27; /* Text color */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .landing p {
+    position: absolute;
+    top: 45%; /* Adjust the vertical position of p */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f05a27; /* Text color */
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between; /* Space items evenly along the main axis */
+    max-width: 100%; /* Set maximum width */
+    margin: 0 auto; /* Center the boxes horizontally */
+    background-color: #ffffff;
+  }
+  
+  .mission-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 20px; /* Add padding for spacing */
+    max-width: 30%; /* Adjust the width */
+    color: #000000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto; /* Auto-center horizontally */
+    margin-right: auto; /* Auto-center horizontally */
+  }
+  
+  .mission-text h2 {
+    font-size: 4rem; /* Adjust the font size of h2 */
+  }
+  
+  .mission-text p {
+    font-size: 1.5rem; /* Adjust the font size of p */
+    margin-top: -20px;
+  }
+  
+  .mission-image {
+    max-width: 45%; /* Limit width */
+  }
+  
+  .mission-image img {
+    width: 80%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    padding: 50px;
+    border-radius: 80px;
+  }
+
+  .race-content {
+    display: flex;
+    justify-content: space-between; /* Space items evenly along the main axis */
+    max-width: 100%; /* Set maximum width */
+    margin: 0 auto; /* Center the boxes horizontally */
+    background-color: #161616;
+  }
+  
+  .race-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 0px; /* Add padding for spacing */
+    max-width: 30%; /* Adjust the width */
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto; /* Auto-center horizontally */
+    margin-right: auto; /* Auto-center horizontally */
+    
+  }
+  
+  .race-text h2 {
+    font-size: 4rem; /* Adjust the font size of h2 */
+  }
+
+  .race-text a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .race-text a:hover {
+    color: #939393;
+  }
+  
+  .race-text p {
+    font-size: 1.5rem; /* Adjust the font size of p */
+    margin-top: -20px;
+  }
+  
+  .race-image {
+    flex: 1; /* Take up remaining space */
+    max-width: 50%; /* Limit width */
+  }
+  
+  .race-image img {
+    width: 80%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    padding: 50px;
+    border-radius: 80px;
+  }
+
+  .sponsors {
+    text-align: center;
+  }
+  
+  .companies {
+    display: inline-block;
+    padding: 50px;
+    padding-top: 0px;
+  }
+  
+  .companies h2 {
+    font-size: 4rem; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .companies img {
+    align-items: center;
+    padding: 25px; /* Add padding around the image */
+    max-width: 40%;
+    height: auto;
+  }
+
+  .companies .redbull img {
+    max-height: 20vh;
+    width: auto;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .landing h1 {
+      position: absolute;
+      top: 40%; /* Adjust the vertical position of h1 */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; /* Adjust the width */
+      font-size: 3rem; /* Adjust the font size */
+      text-align: center; /* Center align text */
+    }
+  
+    .landing p {
+      position: absolute;
+      top: 55%; /* Adjust the vertical position of p */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; /* Adjust the width */
+      font-size: 1rem; /* Adjust the font size */
+      text-align: center; /* Center align text */
+      padding-top: 200px;
+    }
+
+    .mission-content,
+    .race-content {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .mission-text,
+    .race-text {
+      max-width: 80%; /* Adjust the width of the text content */
+      text-align: center; /* Center align text */
+      padding: 20px; /* Add padding for spacing */
+      align-items: center;
+    }
+  
+    .mission-image,
+    .race-image {
+      max-width: 80%; /* Set maximum width to 100% */
+      align-items: center;
+    }
+
+    .mission-image img {
+      max-width: 100%; /* Make the image fill its container */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove any default inline styling */
+      margin-left: -20px; /* Center the image horizontally */
+      margin-top: -30px;
+      border-radius: 60px;
+    }
+    
+    .race-image img {
+      max-width: 100%; /* Make the image fill its container */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove any default inline styling */
+      margin-left: -20px; /* Center the image horizontally */
+      margin-bottom: -50px;
+      border-radius: 60px;
+    }
+
+    .companies img {
+      display: inline-block;
+      text-align: center; /* Center the content */
+      max-width: 100%; /* Limit the width to prevent extending too far */
+      box-sizing: border-box; /* Include padding in the width calculation */
+    }
+  }

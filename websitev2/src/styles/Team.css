@@ -28,6 +28,7 @@
 .top-section img {
     max-width: 100%;
     height: auto;
+    filter: grayscale(0.8)
 }
 
 /* Style for the team members section */
