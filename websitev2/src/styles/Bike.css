@@ -1,6 +1,8 @@
 .bike {
-    background: #ffffff;
-    height: 100vh;
+    height: 100vh; /* Adjusted height for better responsiveness */
+    display: flex; /* Added for centering content */
+    justify-content: center; /* Added for centering content */
+    align-items: center; /* Added for centering content */
 }
 
 @keyframes colorChange {
@@ -8,10 +10,10 @@
         color: #f05a27; /* Start color (orange) */
     }
     15% {
-        color: #f05a27
+        color: #f05a27;
     }
     50% {
-        color: #000000;
+        color: #ffffff;
     }
     85% {
         color: #f05a27;
@@ -23,7 +25,8 @@
 
 .bike h1 {
     text-align: center;
-    font-size: 100px;
-    padding: 225px;
-    animation: colorChange 3s linear infinite;
+    font-size: 10vw; /* Adjusted font size for better responsiveness */
+    animation: colorChange 5s linear infinite;
+    margin: 0; /* Updated margin for better spacing */
+    margin-bottom: 100px;
 }
