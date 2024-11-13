@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import '../styles/Home.css'
 //import backgroundImage from '../assets/Ghost_Logo_v1.png'
 //import orangeImage from '../assets/GhostLogo_LandingImage.png'
-import TheRace from '../assets/TheRace_Image.jpg'
+// import TheRace from '../assets/TheRace_Image.jpg'
 import mission from '../assets/Mission_Image.jpeg'
 import altair from '../assets/altairlogo.png'
 //import warinc from '../assets/warinc_logo.png'
@@ -16,6 +16,8 @@ import RBM from '../assets/rbm_logo.png'
 import KTinc from '../assets/KTinc.png'
 import Wagner from '../assets/WagnerMachine.png'
 import InData from '../assets/InDataConsulting.png'
+import AHRMA from '../assets/ahrma_race_photo.jpeg'
+import Harley from '../assets/harley_davidson.png'
 
 
 function Home() {
@@ -42,7 +44,7 @@ function Home() {
         <div className="mission-content">
           <div className="mission-text">
             <h2>Mission</h2>
-            <p>GHOST Electric is a registered student organization (RSO) at The University of Illinois Urbana-Champaign, whose purpose is to design, construct, and race electric motorcycles while fitting within certain criteria given by the MotoStudent race organizers.</p>
+            <p>GHOST Electric is a registered student organization (RSO) at The University of Illinois Urbana-Champaign, whose purpose is to design, construct, and race electric motorcycles while fitting within certain criteria given by the AHRMA race organizers.</p>
           </div>
           <div className="mission-image">
             <img src={mission} alt="MissionImage"/>
@@ -52,11 +54,11 @@ function Home() {
       <div className = "race">
         <div className="race-content">
           <div className="race-image">
-            <img src={TheRace} alt="RaceImage" />
+            <img src={AHRMA} alt="AHRMA Race Image" />
           </div>
           <div className="race-text">
             <h2>The Race</h2>
-            <p>Ghost is participating in <a href="https://www.motostudent.com/" target="_blank" rel="noreferrer">MotoStudent's</a> electric category, where teams from universities worldwide race their custom-built electric motorcycles, applying engineering skills in a competitive setting.</p>
+            <p>Ghost is participating in <a href="https://www.ahrma.org/" target="_blank" rel="noreferrer">AHRMA'S</a> Formula Lightning Varsity Challenge, where collegiate teams from universities nationwide race their custom-built electric motorcycles, applying engineering skills in a competitive setting.</p>
           </div>
         </div>
       </div> 
@@ -89,6 +91,9 @@ function Home() {
             </a>
             <a className="ACC" href="https://indataconsulting.com/" target="_blank" rel="noreferrer">
               <img src={InData} width={300} height={125} alt="InData" />
+            </a>
+            <a className="ACC" href="https://www.harley-davidson.com/us/en/index.html?source_cd=SEM_Retention_PPC%7CGOOGLE%7CH-D_Core_Brand_E%7CBrand%7Charley+davidson&_cr=ppc%7CGOOGLE%7CH-D_Core_Brand_E%7CBrand%7Charley+davidson&s_kwcid=AL!15884!3!645250994833!e!!g!!harley%20davidson&gad_source=1&gclid=Cj0KCQiA88a5BhDPARIsAFj595gpkapDzzghZdnBZP-pkKMrmtYuCqYfUj8cPSsIIiX5EG_djIImViAaAiRoEALw_wcB&gclsrc=aw.ds" target="_blank" rel="noreferrer">
+              <img src={Harley} width={300} height={125} alt="HarleyDavidson" />
             </a>
         </div>
       </div>
