@@ -7,6 +7,7 @@ import Team from './pages/Team'
 import Bike from './pages/Bike'
 import Contact from './pages/Contact'
 import Join from './pages/Join'
+import Support from './pages/Support'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/bike" exact element={<Bike />} />
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/join" exact element={<Join />} />
+          <Route path="/support" exact element={<Support />} />
           </Routes>
           <Footer />
       </Router>

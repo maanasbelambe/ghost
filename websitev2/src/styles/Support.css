@@ -1,0 +1,66 @@
+.support-us {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3rem;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+  }
+  
+  .card {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .card:hover {
+    background-color: #ddd;
+  }
+  
+  .image-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+  
+  .image-text img {
+    width: 48%;
+    height: auto;
+  }
+  
+  .image-text p {
+    width: 48%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .pdf-container {
+    margin-top: 40px;
+  }
+  

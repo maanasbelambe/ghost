@@ -52,7 +52,18 @@ function Navbar() {
                 className={`nav-links ${location.pathname === '/contact' ? 'active' : ''}`}
                 onClick={handleClick}
               >
-                Contact Us
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                exact
+                to="/support"
+                activeClassName="active"
+                className={`nav-links ${location.pathname === '/support' ? 'active' : ''}`}
+                onClick={handleClick}
+              >
+                Support us
               </Link>
             </li>
             <li className="nav-item">
