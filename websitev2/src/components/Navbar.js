@@ -52,7 +52,7 @@ function Navbar() {
                 className={`nav-links ${location.pathname === '/contact' ? 'active' : ''}`}
                 onClick={handleClick}
               >
-                Contact
+                Contact Us
               </Link>
             </li>
             <li className="nav-item">
@@ -63,7 +63,7 @@ function Navbar() {
                 className={`nav-links ${location.pathname === '/support' ? 'active' : ''}`}
                 onClick={handleClick}
               >
-                Support us
+                Support Us
               </Link>
             </li>
             <li className="nav-item">

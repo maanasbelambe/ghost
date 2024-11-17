@@ -1,12 +1,16 @@
 import React from 'react';
 import '../styles/Support.css';
+import Hero from '../assets/BikeWebPic3.jpg'
+import Levels from '../assets/SponsorLevels.png'
 
 const Support = () => {
   return (
     <div className="support-us">
       <header className="hero">
-        <img src="your-image-path.jpg" alt="Support Us" />
-        <h1>Support Us</h1>
+        <img src={Hero} alt="Support Us" />
+        <div className="hero-text">
+          <h1>Support Us</h1>
+        </div>
       </header>
       
       <div className="cards">
@@ -16,13 +20,10 @@ const Support = () => {
       </div>
 
       <div className="image-text">
-        <img src="your-side-image.jpg" alt="Side Image" />
-        <p>Your supporting text goes here.</p>
+        <img src={Levels} alt="Side Image" />
+        <p>We will promote your company based on the level of sponsorship provided, including (but not limited to) adding your logo to our motorcycle and website, and recognizing your contributions on our growing social media pages.</p>
       </div>
-
-      <div className="pdf-container">
-        <embed src="your-file-path.pdf" type="application/pdf" width="100%" height="600px" />
-      </div>
+      
     </div>
   );
 };
