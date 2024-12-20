@@ -30,3 +30,25 @@
     margin: 0; /* Updated margin for better spacing */
     margin-bottom: 100px;
 }
+
+.table {
+    padding: 100px;
+    display: table;
+    border-collapse: collapse;
+    /* width: 100%; */
+  }
+  
+  .row {
+    display: table-row;
+  }
+  
+  .cell {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .header {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
