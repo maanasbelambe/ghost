@@ -58,6 +58,17 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 exact
+                to="/support"
+                activeClassName="active"
+                className={`nav-links ${location.pathname === '/support' ? 'active' : ''}`}
+                onClick={handleClick}
+              >
+                Support Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                exact
                 to="/join"
                 activeClassName="active"
                 className={`nav-links ${location.pathname === '/join' ? 'active' : ''}`}

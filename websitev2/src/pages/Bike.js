@@ -1,7 +1,11 @@
 import React, {useEffect}  from 'react'
 import '../styles/Bike.css'
 import BikeBW from '../assets/BikeBW.png'
+<<<<<<< HEAD
 import BikePic from '../assets/ghost_bike.jpg'
+=======
+import BikeImage from '../assets/ghost_bike.jpg'
+>>>>>>> 3d2570999ed8fba3923e0e10c94fdacc94838215
 
 function Bike() {
 
@@ -42,6 +46,7 @@ function Bike() {
       
     return (
         <div>
+<<<<<<< HEAD
         <div className="background1" style={{backgroundImage: `url(${BikePic})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh'}}>
             <div className="bike">
                 <h1>Meet our bike.</h1>
@@ -53,6 +58,20 @@ function Bike() {
         
 
         </div>
+=======
+        <div className="background1" style={{backgroundImage: `url(${BikeImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh'}}>
+            <div className="bike">
+                <h1>The Bike</h1>
+            </div>
+        </div>
+        <div>
+
+
+        </div>
+        
+        </div>
+        
+>>>>>>> 3d2570999ed8fba3923e0e10c94fdacc94838215
   );
 }
 
