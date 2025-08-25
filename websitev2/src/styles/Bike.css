@@ -1,8 +1,9 @@
+/* Main Layout */
 .bike {
-    height: 100vh; /* Adjusted height for better responsiveness */
-    display: flex; /* Added for centering content */
-    justify-content: center; /* Added for centering content */
-    align-items: center; /* Added for centering content */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes colorChange {
@@ -27,28 +28,125 @@
     text-align: center;
     font-size: 10vw; /* Adjusted font size for better responsiveness */
     animation: colorChange 5s linear infinite;
-    margin: 0; /* Updated margin for better spacing */
+    margin: 0;
     margin-bottom: 100px;
 }
 
 .table {
-    padding: 100px;
+    background-color: #ECECEC;
+    padding: 20px;
     display: table;
     border-collapse: collapse;
-    /* width: 100%; */
-  }
-  
-  .row {
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.row {
     display: table-row;
-  }
-  
-  .cell {
+}
+
+.cell {
     display: table-cell;
-    border: 1px solid black;
+    border: 0;
     padding: 8px;
-  }
-  
-  .header {
-    font-weight: bold;
-    background-color: #f0f0f0;
-  }
+}
+
+.bike-description {
+    
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* margin: 20px; */
+    text-align: left;
+    max-width: 100%;
+    /* Remove problematic max-width calc */
+}
+
+.bike-description h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.bike-description p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Default Layout for Larger Screens */
+.outer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.bike-description {
+    flex: 1 1 40%; /* Adjusted to 40% */
+    padding-right: 20px;
+}
+
+.table {
+    width: 485px;
+    padding-right: 20px;
+    margin-left: 0px;
+}
+
+.image-container {
+    flex: 1 1 50%; /* Initially 20% of space for image */
+    padding-left: 20px;
+    max-width: 50%; /* Max width for the image */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top:20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.coming-soon {
+    margin: 0px;
+}
+.bike-title {
+    margin-bottom: 5px;
+}
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .outer-div {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .bike-description,  .image-container {
+        flex: none;
+        width: 100%; /* Ensure full width on small screens */
+        padding: 10px 0;
+    }
+
+    .bike-description {
+        width: 100%;
+        padding-right: 0;
+    }
+    .table {
+        margin-left:20px;
+        width: 90%;
+    }
+
+    .image-container {
+        max-width: 90%; /* Limit image size for mobile */
+        padding-left: 0;
+    }
+}

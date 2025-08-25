@@ -1,3 +1,7 @@
+body {
+  /* background-image: url('../assets/coolbackground.png'); */
+}
+
 .support-us {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -5,6 +9,7 @@
 
 
 .hero {
+  /* background-color: black; */
   position: relative;
   text-align: center;
   margin-bottom: 30px;
@@ -26,46 +31,158 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.cards {
+.cardsSup {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 40px 0;
+  gap: 20px;
 }
 
-.card {
-  padding: 20px;
+.cardSup {
+  /* margin-top:20px; */
+  display:inline-flex;
+  padding: 15px;
   background-color: #f2f2f2;
   border: 1px solid #ccc;
   text-decoration: none;
+  font-weight: bold;
   color: black;
   text-align: center;
   border-radius: 8px;
   transition: background-color 0.3s;
+   margin-right: 30px;
+   margin-left: 30px; 
+  background-image: linear-gradient(to bottom, #fdb933, #f89a32);
 }
 
-.card:hover {
-  background-color: #ddd;
+
+.card-one {
+  /* margin-top: 20px; */
+  /* background-color: #fcf9f9; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  /* background-image: linear-gradient(to bottom, #ff7e5f, #feb47b); */
+}
+
+
+
+.card-two {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+
+}
+
+.cardSup:hover {
+  background-image: linear-gradient(to bottom, #f89a32, #fdb933);
 }
 
 .image-text {
   display: flex;
-  justify-content: space-between;
-  margin: 40px 0;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  /* justify-content: space-between; */
+  /* margin: 40px 0; */
 }
 
 .image-text img {
-  width: 35%;
+  width: 50%;
   height: auto;
-  margin-left: 150px;
+  /* object-fit: cover; */
+  /* margin-left: 150px; */
 }
 
 .image-text p {
   width: 48%;
   font-size: 1.2rem;
   line-height: 1.6;
-  margin-right: 100px;
+  /* margin-right: 100px; */
 }
 
 .pdf-container {
   margin-top: 40px;
+}
+
+/* Control the size and appearance of the GoFundMe brand logo */
+.gfm-brand {
+  max-width: 150px; /* Set the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  padding-bottom: 20px; /* Add some spacing below the image */
+}
+
+/* Control the size of the QR Code */
+.gfm-qr {
+  max-width: 200px; /* Limit the size of the QR code */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures the QR code is centered */
+  margin: 10px auto; /* Center the QR code horizontally */
+}
+.venmo-brand {
+  max-width: 150px; /* Set the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  padding-bottom: 20px; /* Add some spacing below the image */
+}
+.venmo-qr {
+  max-width: 200px; /* Limit the size of the QR code */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures the QR code is centered */
+  margin: 10px auto; /* Center the QR code horizontally */
+}
+
+.sponsor-pdf iframe {
+  display: inline-block;
+}
+
+.sponsor-pdf a {
+  display: none;
+}
+
+.levelsImg {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .image-text img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .image-text p {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .sponsor-pdf {
+    width: 100%;
+    height: auto;
+
+  }
+  .pdfContainer {
+    width: 100%;
+  }
+
+  .sponsor-pdf a {
+    display: inline-block;
+  }
+
+  .sponsor-pdf iframe {
+    display: none;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    font-size: 1.9rem;
+  }
 }

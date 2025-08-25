@@ -10,8 +10,7 @@ function Join() {
     return (
     <div>
         <div className="join">
-            <iframe title="joinform" src="https://docs.google.com/forms/d/e/1FAIpQLSdfDWrpqsBBB54QqfaVNxusNceC7x9g6HOLcLC1u3IH_37UWw/viewform?embedded=true" width="640px" height="1800px" frameBorder={0}>Loading…</iframe>
-        </div>
+        <iframe title='joinForm' src="https://docs.google.com/forms/d/e/1FAIpQLSftNc8y5yukpGNpKEmJkdMfKlV4zco_HZcLL6XXV4FRkbnQRA/viewform?embedded=true" width="640" height="2174" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    </div>
     </div>
   );
 }

@@ -25,7 +25,7 @@ function Contact() {
                 <div className="contact-section">
                     <h2>Financial</h2>
                     <p>For financial and accounting related questions from University of Illinois staff and affiliates.</p>
-                    <button onClick={() => window.location.href = 'mailto:hpala3@illinois.edu'}>Contact Harith (Treasurer)</button>
+                    <button onClick={() => window.location.href = 'mailto:sblaker2@illinois.edu'}>Contact Sam (Treasurer)</button>
                 </div>
             </div>
         </div>
