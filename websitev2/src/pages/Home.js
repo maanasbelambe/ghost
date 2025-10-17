@@ -10,6 +10,7 @@ import ACC from '../assets/ACCLogo.png'
 import redbull from '../assets/redbull.png'
 import SSC from '../assets/IGF.png'
 import PLA from '../assets/PLAconsulting.png'
+import Wilson from '../assets/wilsonFunTech.png'
 //import frame from '../assets/frame.png'
 //import framefound from '../assets/framfound.jpeg'
 import RBM from '../assets/rbm_logo.png'
@@ -68,6 +69,10 @@ function Home() {
             <a className="ACC" href="https://www.rightbalancemotorsports.com/" target="_blank" rel="noreferrer">
               <img src={RBM} width={375} height={125} alt="Right Balance Motorsports" />
             </a>
+            <a className="ACC" href="https://www.wilsonfuntech.com/" target="_blank" rel="noreferrer">
+              <img src={Wilson} width={375} height={125} alt="Wilson Fun Tech" />
+            </a>
+            
             <a className="ACC" href="https://studentengagement.illinois.edu/student-sustainability/ssc/" target="_blank" rel="noreferrer">
               <img src={SSC}  width={300} height={125} alt="SSC" />
             </a>
